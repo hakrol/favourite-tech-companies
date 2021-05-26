@@ -1,20 +1,26 @@
 nav {
-  a {
-    padding: 20px;
-    background-color: rgb(214, 214, 214);
-  }
+    a {
+        padding: 20px;
+        background-color: rgb(214, 214, 214);
+        border-radius: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 
-  a:link,
-  a:hover,
-  a:visited,
-  a:active {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $color-navigation-text;
-  }
-}
+    .active {
+        background-color: $color-primary;
+        color: white !important;
+    }
 
-.active {
-  background-color: $color-navigation-button;
-  color: white !important;
+    a:hover {
+        background-color: $color-primary;
+        color: white !important;
+    }
+
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+        color: $color-navigation-text;
+    }
 }

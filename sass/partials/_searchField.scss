@@ -1,13 +1,20 @@
+.search-container {
+    width: 100%;
+}
+
 .search {
-  border: none;
-  background-color: rgb(236, 236, 236);
-  padding: 20px;
-  width: 25%;
-  font-size: large;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    width: 25%;
+    font-size: large;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  .search {
-    width: 75%;
-  }
+    .search {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }

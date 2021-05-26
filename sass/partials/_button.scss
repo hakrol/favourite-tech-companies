@@ -1,6 +1,16 @@
+.button {
+    margin: 0 0 0 10px;
+}
+
 .clearButton {
-  border: none;
-  background-color: $color-primary-light;
-  color: white;
-  padding: 20px;
+    border: none;
+    background-color: $color-primary-light;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: $color-primary;
+        cursor: pointer;
+    }
 }

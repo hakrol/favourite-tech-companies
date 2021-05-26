@@ -1,41 +1,70 @@
 .list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  .list-card {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    color: white;
-    margin: 10px 5px 10px 0;
-    background-color: $color-primary;
-    box-shadow: 1px 1px 5px #b3b3b3;
-    border-radius: 20px;
-    width: 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    h2 {
-      color: white;
+    .list-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: white;
+        margin: 10px 5px 10px 0;
+        background-color: $color-primary;
+        box-shadow: 1px 1px 5px #b3b3b3;
+        border-radius: 20px;
+        width: 200px;
+        min-width: 100px;
+
+        h2 {
+            color: white;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            padding: 10px;
+            width: 100%;
+        }
+
+        &__content {
+            @media only screen and (max-width: 600px) {
+                font-size: 10px;
+
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
     }
-  }
 
-  .list-card-fav {
-    padding: 20px;
-    color: white;
-    margin: 10px 5px 10px 0;
-    background-color: $color-primary;
-    box-shadow: 1px 1px 5px #b3b3b3;
-    border-radius: 20px;
+    .list-card-fav {
+        padding: 20px;
+        color: white;
+        margin: 10px 5px 10px 0;
+        background-color: $color-primary;
+        box-shadow: 1px 1px 5px #b3b3b3;
+        border-radius: 20px;
 
-    h2 {
-      color: white;
+        h2 {
+            color: white;
+        }
+
+        @media only screen and (max-width: 600px) {
+            padding: 10px;
+        }
+
+        &__content {
+            @media only screen and (max-width: 600px) {
+                font-size: 10px;
+            }
+        }
     }
-  }
 
-  .fa-check-circle:hover,
-  .fa-circle:hover {
-    opacity: 50%;
-  }
+    .fa-check-circle:hover,
+    .fa-circle:hover {
+        opacity: 50%;
+        cursor: default;
+        cursor: copy;
+    }
 }
