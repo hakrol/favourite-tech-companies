@@ -13,6 +13,6 @@ npm install
 npm run develop
 ```
 
-Username: User
+Username: User / Password: User1234
 
-Password: User1234
+Run code locally. Enjoy!
