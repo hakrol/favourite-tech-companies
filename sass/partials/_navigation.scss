@@ -1,0 +1,20 @@
+nav {
+  a {
+    padding: 20px;
+    background-color: rgb(214, 214, 214);
+  }
+
+  a:link,
+  a:hover,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-navigation-text;
+  }
+}
+
+.active {
+  background-color: $color-navigation-button;
+  color: white !important;
+}

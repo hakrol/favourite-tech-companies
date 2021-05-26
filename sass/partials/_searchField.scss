@@ -1,0 +1,13 @@
+.search {
+  border: none;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  width: 25%;
+  font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    width: 75%;
+  }
+}

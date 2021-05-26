@@ -1,0 +1,41 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .list-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    margin: 10px 5px 10px 0;
+    background-color: $color-primary;
+    box-shadow: 1px 1px 5px #b3b3b3;
+    border-radius: 20px;
+    width: 20%;
+
+    h2 {
+      color: white;
+    }
+  }
+
+  .list-card-fav {
+    padding: 20px;
+    color: white;
+    margin: 10px 5px 10px 0;
+    background-color: $color-primary;
+    box-shadow: 1px 1px 5px #b3b3b3;
+    border-radius: 20px;
+
+    h2 {
+      color: white;
+    }
+  }
+
+  .fa-check-circle:hover,
+  .fa-circle:hover {
+    opacity: 50%;
+  }
+}
